@@ -32,36 +32,36 @@ $routes->setAutoRoute(true);
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 // $routes->get('/', 'Home::index');
-$routes->resource('sub_task');
-$routes->resource('user');  
-$routes->resource('task'); 
-$routes->resource('ticket'); 
-$routes->resource('admin');
-$routes->resource('office'); 
-$routes->resource('department'); 
-$routes->resource('division'); 
-$routes->resource('incident');
-$routes->get('view/(:segment)', 'ticket::view/$1');
+$routes->resource('Sub_task');
+$routes->resource('User');  
+$routes->resource('Task'); 
+$routes->resource('Ticket'); 
+$routes->resource('Admin');
+$routes->resource('Office'); 
+$routes->resource('Department'); 
+$routes->resource('Division'); 
+$routes->resource('Incident');
+$routes->get('view/(:segment)', 'Ticket::view/$1');
 //          ('url/id' , 'controller::function/id)
-$routes->get('check', 'user::check');
-$routes->get('done/(:segment)/(:segment)', 'ticket::done/$1/$2');
-$routes->get('category/(:segment)/(:segment)', 'ticket::category/$1/$2');
-$routes->get('pending/(:segment)/(:segment)', 'ticket::pending/$1/$2');
-$routes->get('ticket2/(:segment)/(:segment)', 'ticket::ticket2/$1/$2');
-$routes->get('pending2/(:segment)/(:segment)/(:segment)', 'ticket::pending2/$1/$2/$3');
-$routes->get('pending3/(:segment)/(:segment)', 'ticket::pending3/$1/$2');
-$routes->get('slip_status/(:segment)/(:segment)/(:segment)', 'ticket::slip_status/$1/$2/$3');
-$routes->get('donestaff/(:segment)/(:segment)/(:segment)', 'ticket::done2/$1/$2/$3');
-$routes->get('print-done/(:segment)/(:segment)', 'ticket::done4/$1/$2');
-$routes->get('print-done/staff/(:segment)/(:segment)', 'ticket::done5/$1/$2');
-$routes->get('print-done2/(:segment)/(:segment)/(:segment)', 'ticket::done3/$1/$2/$3');
-$routes->get('done-all/(:segment)', 'ticket::done6/$1');
-$routes->get('report/month/(:segment)', 'ticket::all_month/$1');
-$routes->get('report/(:segment)/(:segment)', 'ticket::cat/$1/$2');
-$routes->get('report/staff/(:segment)/(:segment)/(:segment)/(:segment)', 'ticket::all/$1/$2/$3/$4');
-$routes->get('report-ticket/(:segment)', 'ticket::index2/$1');
-$routes->get('pending/(:segment)', 'ticket::pending4/$1');
-$routes->get('staff/(:segment)/(:segment)/(:segment)', 'ticket::staff/$1/$2/$3');
+$routes->get('check', 'User::check');
+$routes->get('done/(:segment)/(:segment)', 'Ticket::done/$1/$2');
+$routes->get('category/(:segment)/(:segment)', 'Ticket::category/$1/$2');
+$routes->get('pending/(:segment)/(:segment)', 'Ticket::pending/$1/$2');
+$routes->get('ticket2/(:segment)/(:segment)', 'Ticket::ticket2/$1/$2');
+$routes->get('pending2/(:segment)/(:segment)/(:segment)', 'Ticket::pending2/$1/$2/$3');
+$routes->get('pending3/(:segment)/(:segment)', 'Ticket::pending3/$1/$2');
+$routes->get('slip_status/(:segment)/(:segment)/(:segment)', 'Ticket::slip_status/$1/$2/$3');
+$routes->get('donestaff/(:segment)/(:segment)/(:segment)', 'Ticket::done2/$1/$2/$3');
+$routes->get('print-done/(:segment)/(:segment)', 'Ticket::done4/$1/$2');
+$routes->get('print-done/staff/(:segment)/(:segment)', 'Ticket::done5/$1/$2');
+$routes->get('print-done2/(:segment)/(:segment)/(:segment)', 'Ticket::done3/$1/$2/$3');
+$routes->get('done-all/(:segment)', 'Ticket::done6/$1');
+$routes->get('report/month/(:segment)', 'Ticket::all_month/$1');
+$routes->get('report/(:segment)/(:segment)', 'Ticket::cat/$1/$2');
+$routes->get('report/staff/(:segment)/(:segment)/(:segment)/(:segment)', 'Ticket::all/$1/$2/$3/$4');
+$routes->get('report-ticket/(:segment)', 'Ticket::index2/$1');
+$routes->get('pending/(:segment)', 'Ticket::pending4/$1');
+$routes->get('staff/(:segment)/(:segment)/(:segment)', 'Ticket::staff/$1/$2/$3');
 
 /*
  * --------------------------------------------------------------------

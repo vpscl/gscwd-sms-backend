@@ -6,7 +6,7 @@ use CodeIgniter\API\ResponseTrait;
 use App\Models\TicketModel;
 use Exception;
 
-class ticket extends ResourceController
+class Ticket extends ResourceController
 {
     use ResponseTrait;
     // show all ticket
